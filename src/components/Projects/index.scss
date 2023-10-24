@@ -49,111 +49,84 @@
 
   .bottom {
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: row;
+    justify-content: center;
+    // flex-direction: column;
     width: 100%;
-    margin-top: 150px;
+    margin-top: 10px;
     color: white;
     gap: 3rem;
     font-family: 'Poppins', sans-serif;
-    h3 {
-      color: black;
-      text-decoration: none;
-      font-size: 2rem;
-    }
-    .card {
-      width: var(--card-width);
-      height: var(--card-height);
-      justify-content: center;
+
+    .details {
       display: flex;
-      align-items: flex-end;
-      margin: 0 50px;
-      padding: 0 36px;
-      perspective: 2500px;
-      border-radius: 10px;
-    }
+      justify-content: center;
+      flex-direction: column;
+      padding: 2rem;
+      text-align: center;
+      align-items: center;
+      transition: all ease 200ms;
+      margin: 0px 150px 100px 0;
+      --s: 15px;
+      --b: 2px;
+      --w: 300px;
+      --c: #007ced;
 
-    .cover-image {
-      border-radius: 10px;
-      width: 100%;
-      height: 100%;
+      width: var(--w);
+      aspect-ratio: 1;
       object-fit: cover;
-    }
+      padding: calc(2 * var(--s));
+      --_g: var(--c) var(--b), #0000 0 calc(100% - var(--b)), var(--c) 0;
+      background: linear-gradient(var(--_g)) 50%/100% var(--_i, 100%) no-repeat,
+        linear-gradient(90deg, var(--_g)) 50% / var(--_i, 100%) 100% no-repeat;
+      outline: calc(var(--w) / 2) solid #0009;
+      outline-offset: calc(var(--w) / -2 - 2 * var(--s));
+      transition: 0.4s;
 
-    .wrapper {
-      transition: all 0.5s;
-      position: absolute;
-      width: 100%;
-      z-index: -1;
-    }
+      &:hover {
+        outline: var(--b) solid var(--c);
+        outline-offset: calc(var(--s) / -2);
+        --_i: calc(100% - 2 * var(--s));
+      }
 
-    .card:hover .wrapper {
-      transform: perspective(500px) translateY(-5%) rotateX(25deg) translateZ(0);
-      box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
-      -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
-    }
+      .project-title {
+        font-size: 30px;
+        font-family: 'Poppins', sans-serif;
+      }
 
-    .wrapper::before,
-    .wrapper::after {
-      content: '';
-      opacity: 0;
-      width: 100%;
-      height: 80px;
-      transition: all 0.5s;
-      position: absolute;
-      left: 0;
-    }
-    .wrapper::before {
-      top: 0;
-      height: 100%;
-      background-image: linear-gradient(
-        to top,
-        transparent 46%,
-        rgba(12, 13, 19, 0.5) 68%,
-        rgba(12, 13, 19) 97%
-      );
-    }
-    .wrapper::after {
-      bottom: 0;
-      opacity: 1;
-      background-image: linear-gradient(
-        to bottom,
-        transparent 46%,
-        rgba(12, 13, 19, 0.5) 68%,
-        rgba(12, 13, 19) 97%
-      );
-    }
+      .article {
+        width: 100%;
 
-    .card:hover .wrapper::before,
-    .wrapper::after {
-      opacity: 1;
+        img {
+          border-radius: 5px;
+          width: 100%;
+          align-items: center;
+        }
+      }
     }
+    .btn-container {
+      display: flex;
+      gap: 1rem;
+      .btn {
+        background: none;
+        color: #b5b5b5;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: 10px 18px;
+        border: 1px solid #b5b5b5;
+        float: left;
+        animation: fadeInAnimation 1s 1.8s backwards;
+        white-space: nowrap;
+        margin-bottom: 20px;
 
-    .card:hover .wrapper::after {
-      height: 120px;
-    }
-    .title {
-      width: 100%;
-      transition: transform 0.5s;
-    }
-    .card:hover .title {
-      transform: translate3d(0%, -50px, 100px);
-    }
-
-    .character {
-      width: 100%;
-      opacity: 0;
-      transition: all 0.5s;
-      position: absolute;
-      z-index: -1;
-    }
-
-    .card:hover .character {
-      text-decoration: none;
-      opacity: 1;
-      transform: translate3d(0%, -30%, 100px);
+        &:hover {
+          background: #007ced;
+          color: #ffff;
+        }
+      }
     }
   }
 }
@@ -166,8 +139,9 @@
       display: flex;
       justify-content: center;
       flex-direction: column;
-      .card {
-        margin: 100px;
+      margin-left: 0;
+      .details {
+        margin: 20px;
       }
     }
   }

@@ -5,10 +5,20 @@
   height: 100%;
   position: absolute;
 }
-
+.top-html {
+  top: 0px;
+  bottom: 0;
+  font-size: 18px;
+  font-family: 'La Belle Aurore', cursive;
+  opacity: 0.6;
+  color: #b5b5b5;
+  left: 90px;
+}
 .top-tags {
+  position: absolute;
   bottom: auto;
-  top: 35px;
+  left: 15px;
+  top: 25px;
 }
 
 .tags {
@@ -16,9 +26,12 @@
   opacity: 0.6;
   position: absolute;
   bottom: 0;
-  left: 120px;
   font-size: 18px;
   font-family: 'La Belle Aurore', cursive;
+}
+
+.bottom-tags {
+  left: 110px;
 }
 
 .bottom-tag-html {
@@ -42,7 +55,6 @@
 
 .container.contact-page,
 .container.about-page,
-// .container.projects,
 .container.portfolio-page {
   h1 {
     font-size: 53px;

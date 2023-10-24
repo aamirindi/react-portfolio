@@ -15,8 +15,8 @@ const Home = () => {
     const typed = new Typed(el.current, {
       strings: [
         'Frontend Developer',
-        'Python developer',
         'React developer',
+        'Python developer',
         'HTML, CSS, & JS',
         'Machine Learning, Data science',
       ],

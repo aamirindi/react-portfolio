@@ -2,10 +2,8 @@ import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
-import Redbank from '../../assets/images/redbank.jpg'
-import RedbankL from '../../assets/images/RedbankL.jpg'
-import BlogL from '../../assets/images/BlogL.jpg'
-import Blog from '../../assets/images/Blog.jpg'
+import RedBank from '../../assets/images/redbanks.jpg'
+import Blog from '../../assets/images/Blogs.jpg'
 
 const Projects = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -29,32 +27,63 @@ const Projects = () => {
           </h1>
         </div>
         <div className="bottom">
-          <a
-            href="https://sparkly-biscotti-22bb7a.netlify.app"
-            alt="Mythrill"
-            target="_blank"
-          >
-            <div className="card">
-              <h3>Redbank</h3>
-              <div className="wrapper">
-                <img src={RedbankL} className="cover-image" />
-              </div>
-              <img src={Redbank} className="character" />
+          <div className="details">
+            <div className="article">
+              <img src={RedBank} alt="Project 1" className="project-img" />
             </div>
-          </a>
-          <a
-            href="https://fastidious-lamington-581434.netlify.app/"
-            alt="Mythrill"
-            target="_blank"
-          >
-            <div className="card">
-              <h3>Blog</h3>
-              <div className="wrapper">
-                <img src={BlogL} className="cover-image" />
-              </div>
-              <img src={Blog} className="character" />
+            <h2 className="project-title">RedBank</h2>
+            <div className="btn-container">
+              <button
+                className="btn btn-1"
+                onClick={() =>
+                  window.open('https://github.com/aamirindi/redbank', '_blank')
+                }
+              >
+                Github
+              </button>
+              <button
+                className="btn btn-2"
+                onClick={() =>
+                  window.open(
+                    'https://sparkly-biscotti-22bb7a.netlify.app',
+                    '_blank'
+                  )
+                }
+              >
+                Live Demo
+              </button>
             </div>
-          </a>
+          </div>
+          <div className="details">
+            <div className="article">
+              <img src={Blog} alt="Project 1" className="project-img" />
+            </div>
+            <h2 className="project-title">Blog</h2>
+            <div className="btn-container">
+              <button
+                className="btn btn-1"
+                onClick={() =>
+                  window.open(
+                    'https://github.com/aamirindi/Blog-firebase',
+                    '_blank'
+                  )
+                }
+              >
+                Github
+              </button>
+              <button
+                className="btn btn-2"
+                onClick={() =>
+                  window.open(
+                    'https://fastidious-lamington-581434.netlify.app',
+                    '_blank'
+                  )
+                }
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
         </div>
       </div>
       <Loader type="pacman" />

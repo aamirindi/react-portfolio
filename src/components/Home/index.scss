@@ -3,8 +3,9 @@
 .home-page {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 5rem;
 
   .img-zone img {
     margin: 30px;
@@ -33,6 +34,9 @@
     }
   }
   .text-zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 40%;
     max-height: 90%;
   }
@@ -80,7 +84,8 @@
 
   h2 {
     color: #007ced;
-    margin-top: 10px;
+    align-items: flex-start;
+    margin-top: 0px;
     font-weight: 600;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
@@ -157,5 +162,11 @@
     bottom: auto;
     left: 0;
     margin: auto;
+  }
+  .img-zone img {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    // margin: 30px;
   }
 }
