@@ -26,4 +26,4 @@ Key Features:
 
 🔗 Deployable: You can easily deploy this portfolio to showcase your work to the world.
 
-I've designed this portfolio to reflect my personality and skills. Explore my projects, get in touch, and see what I can bring to the table. Your feedback is highly appreciated!
+I've designed this portfolio to reflect my personality and skills. Explore my projects, get in touch, and see what I can bring to the table.
