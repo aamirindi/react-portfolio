@@ -24,6 +24,5 @@ Key Features:
 
 📞 Contact Me: Reach out to me easily through the provided contact information.
 
-🔗 Deployable: You can easily deploy this portfolio to showcase your work to the world.
 
 I've designed this portfolio to reflect my personality and skills. Explore my projects, get in touch, and see what I can bring to the table.
