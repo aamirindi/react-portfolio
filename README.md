@@ -25,4 +25,4 @@ Key Features:
 📞 Contact Me: Reach out to me easily through the provided contact information.
 
 
-I've designed this portfolio to reflect my personality and skills. Explore my projects, get in touch, and see what I can bring to the table.
+I've designed this portfolio to reflect my personality and skills. Explore my projects, get in touch, and see what I can bring to the table. Thank You :)
