@@ -1,6 +1,6 @@
  # Here visit my Portfolio : https://relaxed-lolly-fde1bb.netlify.app
 
-## 🚀 Welcome to my React Portfolio!
+## Welcome to my React Portfolio!
 
 This GitHub repository contains the source code for my personal portfolio website built with React. I've harnessed the power of various technologies and libraries to create a dynamic and interactive portfolio that showcases my skills, projects, and experiences.
 
@@ -25,4 +25,4 @@ Key Features:
 📞 Contact Me: Reach out to me easily through the provided contact information.
 
 
-I've designed this portfolio to reflect my personality and skills. Explore my projects, get in touch, and see what I can bring to the table. Thank You :)
+I've designed this portfolio to reflect my personality and skills. Explore my projects, get in touch, and see what I can bring to the table. Thank You:)
