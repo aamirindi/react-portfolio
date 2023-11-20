@@ -48,24 +48,9 @@ const About = () => {
             Beyond my academic pursuits and technical endeavors, I have a wide
             range of hobbies that keep me energized and balanced. I find joy in
             engaging in Calisthenics, a form of exercise that pushes my physical
-            limits and keeps me motivated to stay fit and healthy. Apart from
-            that, I'm an avid chess player, enjoying the strategic and
-            analytical aspects of the game. When I'm not immersed in my studies
-            or coding projects, you can often find me outdoors, engaging in
-            activities like football and other outdoor games. I believe that
-            such activities not only help me unwind but also foster teamwork,
-            discipline, and a competitive spirit. And, of course, I enjoy
-            playing mobile games during my leisure time. Not only do they
-            provide entertainment, but they also allow me to explore the latest
-            trends in the gaming industry and discover innovative ideas that
-            inspire my own creative endeavors. As a forward-thinking individual,
-            I am continuously seeking opportunities to learn, grow, and
-            contribute to the ever-evolving world of technology and AI. I'm
-            excited to be on this journey, and I'm always open to new
-            experiences and challenges that help me expand my horizons.
+            limits and keeps me motivated to stay fit and healthy.
           </p>
         </div>
-
         <div className="stage-cube-cont">
           <div className="cubespinner">
             <div className="face1">

@@ -171,13 +171,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 70px;
+        font-size: 25px;
       }
 
       a:after {
+        // border: 1px solid white;
+        font-size: 25px;
         opacity: 1;
         position: initial;
         width: auto;
-        margin-left: 10px;
+        margin-left: 20px;
       }
 
       a svg {
