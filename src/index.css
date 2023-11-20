@@ -12,6 +12,7 @@ body {
   background: #222222;
   overflow: hidden;
   display: block;
+  cursor: none;
 }
 
 .dashboard {
