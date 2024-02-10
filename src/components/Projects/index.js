@@ -75,7 +75,7 @@ const Projects = () => {
                 className="btn btn-2"
                 onClick={() =>
                   window.open(
-                    'https://fastidious-lamington-581434.netlify.app',
+                    'https://blog-firebase-aamir.vercel.app',
                     '_blank'
                   )
                 }
