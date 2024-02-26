@@ -45,7 +45,7 @@ const Projects = () => {
                 className="btn btn-2"
                 onClick={() =>
                   window.open(
-                    'https://sparkly-biscotti-22bb7a.netlify.app',
+                    'https://redbank-aamir.vercel.app',
                     '_blank'
                   )
                 }
