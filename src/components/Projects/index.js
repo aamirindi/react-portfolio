@@ -4,6 +4,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import RedBank from '../../assets/images/redbanks.jpg'
 import Blog from '../../assets/images/Blogs.jpg'
+import Todos from '../../assets/images/todos.png'
 
 const Projects = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -44,10 +45,7 @@ const Projects = () => {
               <button
                 className="btn btn-2"
                 onClick={() =>
-                  window.open(
-                    'https://redbank-aamir.vercel.app',
-                    '_blank'
-                  )
+                  window.open('https://redbank-aamir.vercel.app', '_blank')
                 }
               >
                 Live Demo
@@ -78,6 +76,33 @@ const Projects = () => {
                     'https://blog-firebase-aamir.vercel.app',
                     '_blank'
                   )
+                }
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div className="details">
+            <div className="article">
+              <img src={Todos} alt="Project 1" className="project-img" />
+            </div>
+            <h2 className="project-title">Todos</h2>
+            <div className="btn-container">
+              <button
+                className="btn btn-1"
+                onClick={() =>
+                  window.open(
+                    'https://github.com/aamirindi/Angular-basics/tree/main/todo-list',
+                    '_blank'
+                  )
+                }
+              >
+                Github
+              </button>
+              <button
+                className="btn btn-2"
+                onClick={() =>
+                  window.open('https://todo-list-aamir.vercel.app', '_blank')
                 }
               >
                 Live Demo
