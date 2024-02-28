@@ -49,14 +49,12 @@
 
   .bottom {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    // flex-direction: column;
-    width: 100%;
-    margin-top: 10px;
     color: white;
-    gap: 3rem;
     font-family: 'Poppins', sans-serif;
+    overflow: auto;
 
     .details {
       display: flex;
