@@ -4,6 +4,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import RedBank from '../../assets/images/redbanks.jpg'
 import Blog from '../../assets/images/Blogs.jpg'
+import Music from '../../assets/images/music-player.png'
 import Todos from '../../assets/images/todos.png'
 
 const Projects = () => {
@@ -82,6 +83,36 @@ const Projects = () => {
               </button>
             </div>
           </div>
+          <div className="details">
+            <div className="article">
+              <img src={Music} alt="Project 1" className="project-img" />
+            </div>
+            <h2 className="project-title">Music Player</h2>
+            <div className="btn-container">
+              <button
+                className="btn btn-1"
+                onClick={() =>
+                  window.open(
+                    'https://github.com/aamirindi/react-music',
+                    '_blank'
+                  )
+                }
+              >
+                Github
+              </button>
+              <button
+                className="btn btn-2"
+                onClick={() =>
+                  window.open(
+                    'https://react-music-aamir.vercel.app',
+                    '_blank'
+                  )
+                }
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>        
           <div className="details">
             <div className="article">
               <img src={Todos} alt="Project 1" className="project-img" />
