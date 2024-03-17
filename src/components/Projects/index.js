@@ -4,7 +4,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import RedBank from '../../assets/images/redbanks.jpg'
 import Blog from '../../assets/images/Blogs.jpg'
-import Music from '../../assets/images/music-player.png'
+import Music from '../../assets/images/react-music-player.png'
 import Todos from '../../assets/images/todos.png'
 
 const Projects = () => {
