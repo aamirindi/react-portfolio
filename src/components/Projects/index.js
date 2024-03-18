@@ -87,7 +87,7 @@ const Projects = () => {
             <div className="article">
               <img src={Music} alt="Project 1" className="project-img" />
             </div>
-            <h2 className="project-title">Music Player</h2>
+            <h2 className="project-title">(PWA) Music Player</h2>
             <div className="btn-container">
               <button
                 className="btn btn-1"
