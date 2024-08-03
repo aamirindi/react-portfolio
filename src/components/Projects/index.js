@@ -6,6 +6,7 @@ import RedBank from '../../assets/images/redbanks.jpg'
 import Blog from '../../assets/images/Blogs.jpg'
 import Music from '../../assets/images/react-music-player.png'
 import Todos from '../../assets/images/todos.png'
+import Caclu from '../../assets/images/calcu.jpeg'
 
 const Projects = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -29,6 +30,7 @@ const Projects = () => {
           </h1>
         </div>
         <div className="bottom">
+          {/* RedBank */}
           <div className="details">
             <div className="article">
               <img src={RedBank} alt="Project 1" className="project-img" />
@@ -53,6 +55,7 @@ const Projects = () => {
               </button>
             </div>
           </div>
+          {/* Blog */}
           <div className="details">
             <div className="article">
               <img src={Blog} alt="Project 1" className="project-img" />
@@ -83,6 +86,7 @@ const Projects = () => {
               </button>
             </div>
           </div>
+          {/* Music PWA */}
           <div className="details">
             <div className="article">
               <img src={Music} alt="Project 1" className="project-img" />
@@ -103,16 +107,14 @@ const Projects = () => {
               <button
                 className="btn btn-2"
                 onClick={() =>
-                  window.open(
-                    'https://react-music-aamir.vercel.app',
-                    '_blank'
-                  )
+                  window.open('https://react-music-aamir.vercel.app', '_blank')
                 }
               >
                 Live Demo
               </button>
             </div>
-          </div>        
+          </div>
+          {/* Todos */}
           <div className="details">
             <div className="article">
               <img src={Todos} alt="Project 1" className="project-img" />
@@ -134,6 +136,37 @@ const Projects = () => {
                 className="btn btn-2"
                 onClick={() =>
                   window.open('https://todo-list-aamir.vercel.app', '_blank')
+                }
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          {/* Calculator */}
+          <div className="details">
+            <div className="article">
+              <img src={Caclu} alt="Project 1" className="project-img" />
+            </div>
+            <h2 className="project-title">Calculator TS</h2>
+            <div className="btn-container">
+              <button
+                className="btn btn-1"
+                onClick={() =>
+                  window.open(
+                    'https://github.com/aamirindi/calculator?tab=readme-ov-file',
+                    '_blank'
+                  )
+                }
+              >
+                Github
+              </button>
+              <button
+                className="btn btn-2"
+                onClick={() =>
+                  window.open(
+                    'https://calculator-aamirindi.vercel.app',
+                    '_blank'
+                  )
                 }
               >
                 Live Demo

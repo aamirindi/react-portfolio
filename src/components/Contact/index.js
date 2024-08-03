@@ -49,15 +49,19 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in internship opportunities - especially on
-            ambitious or large projects. However, if you have any other requests
-            or questions, don't hesitate to contact me using below form either.
+            If you have any other requests or questions, don't hesitate to
+            contact me using below form either.
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
-                  <input placeholder="Name" type="text" name="from_name" required />
+                  <input
+                    placeholder="Name"
+                    type="text"
+                    name="from_name"
+                    required
+                  />
                 </li>
                 <li className="half">
                   <input

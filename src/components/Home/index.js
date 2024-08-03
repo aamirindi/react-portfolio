@@ -14,15 +14,16 @@ const Home = () => {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
+        'Core Java',
+        'Full Stack Java Developer',
+        'Full Stack Developer',
         'Frontend Developer',
-        'React developer',
-        'Python developer',
+        'REACT, ANGULAR',
         'HTML, CSS, & JS',
-        'Machine Learning, Data science',
       ],
-      typeSpeed: 50,
+      typeSpeed: 120,
       backSpeed: 10,
-      loop: true,
+      showCursor: false,
     })
 
     return () => {
@@ -49,9 +50,10 @@ const Home = () => {
   ]
 
   useEffect(() => {
-    return setTimeout(() => {
+    const timer = setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 4000)
+    return () => clearTimeout(timer)
   }, [])
 
   return (
@@ -85,7 +87,7 @@ const Home = () => {
           </h1>
           <br />
           <h2>
-            <span ref={el}></span>....
+            <span ref={el}></span>|..
           </h2>
           <div className="btn">
             <a
